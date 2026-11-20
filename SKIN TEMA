@@ -1,0 +1,55 @@
+// _obsidian.scss
+\$obs-bg-dark: #0b0b0d;
+\$obs-panel-dark: #121216;
+\$obs-accent-purple: #b300ff;
+\$obs-accent-glow: rgba(179, 0, 255, 0.6);
+\$obs-text-main: #e0e0e0;
+\$obs-text-muted: #888;
+\$obs-knob-rim: #2a2a33;
+\$obs-knob-center: #0f0f11;
+
+@mixin obsidian-knob() {
+  width: 64px;
+  height: 64px;
+  background: \$obs-knob-center;
+  border: 4px solid \$obs-knob-rim;
+  border-radius: 50%;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 12px;
+    background: \$obs-accent-purple;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 0 8px \$obs-accent-glow;
+  }
+
+  &:hover {
+    border-color: \$obs-accent-purple;
+    box-shadow: 0 0 16px \$obs-accent-glow, inset 0 0 16px rgba(0, 0, 0, 0.7);
+  }
+}
+
+@mixin obsidian-btn() {
+  background: #1a1a1f;
+  border: 1px solid #333;
+  color: \$obs-text-main;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: #2a2a33;
+    border-color: \$obs-accent-purple;
+    box-shadow: 0 0 12px \$obs-accent-glow;
+    color: #fff;
+  }
+}
