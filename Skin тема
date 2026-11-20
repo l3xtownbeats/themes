@@ -1,0 +1,36 @@
+{
+  "name": "Obsidian",
+  "version": "1.0.0",
+  "colors": {
+    "background": "#0b0b0d",
+    "panel": "#121216",
+    "accent": "#b300ff",
+    "accentGlow": "rgba(179, 0, 255, 0.6)",
+    "textMain": "#e0e0e0",
+    "textMuted": "#888",
+    "knobRim": "#2a2a33",
+    "knobCenter": "#0f0f11"
+  },
+  "effects": {
+    "knobHoverGlow": "0 0 16px rgba(179, 0, 255, 0.8)",
+    "btnHoverGlow": "0 0 12px rgba(179, 0, 255, 0.7)",
+    "panelShadow": "0 4px 12px rgba(0, 0, 0, 0.4)"
+  },
+  "fonts": {
+    "main": "Roboto Mono",
+    "weight": "700",
+    "sizeBase": "14px"
+  },
+  "elements": {
+    "knob": {
+      "size": 64,
+      "borderWidth": 4,
+      "handleSize": 6,
+      "handleHeight": 12
+    },
+    "button": {
+      "borderRadius": 4,
+      "padding": "8px 16px"
+    }
+  }
+}
